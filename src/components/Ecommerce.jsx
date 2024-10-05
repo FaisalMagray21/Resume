@@ -9,9 +9,9 @@ function Ecommerce() {
         Develop a fully-functional e-commerce platform with user authentication,
         product management, and payment integration
       </p>
-      <p className="py-4 pb-8 ">
+      <p className="py-4 pb-8 flex flex-wrap gap-4 ">
         {tool.map((lists) => (
-          <Projecttool lists={lists} />
+          <Projecttool key={lists} lists={lists} />
         ))}
       </p>
     </div>

@@ -10,9 +10,9 @@ function SocialMedia() {
         Created a responsive dashboard for social media analytics, featuring
         real-time data visualization and reporting.
       </p>
-      <p className="py-4 pb-8 ">
+      <p className="py-4 pb-8 flex flex-wrap gap-4">
         {tool.map((listss) => (
-          <SecondProjecttool listss={listss} />
+          <SecondProjecttool key={listss} listss={listss} />
         ))}
       </p>
     </div>

@@ -7,9 +7,11 @@ function Skills() {
   const skill = ["JavaScript", "React", "NodeJS", "SQL", "GIT"];
   return (
     <Section icon={<Code />} sectiontitle="Skills">
-      {skill.map((title) => (
-        <Pillskill title={title} />
-      ))}
+      <div className=" flex flex-wrap gap-4">
+        {skill.map((title, key) => (
+          <Pillskill key={title} title={title} />
+        ))}
+      </div>
     </Section>
   );
 }
